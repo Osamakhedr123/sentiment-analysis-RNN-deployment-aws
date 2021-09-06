@@ -75,7 +75,6 @@ def train(model, train_loader, epochs, optimizer, loss_fn, device):
             batch_X = batch_X.to(device)
             batch_y = batch_y.to(device)
             
-            # TODO: Complete this train method to train the model provided.
             optimizer.zero_grad()
             output = model(batch_X)
             loss = loss_fn(output,batch_y)
@@ -87,7 +86,7 @@ def train(model, train_loader, epochs, optimizer, loss_fn, device):
 
 if __name__ == '__main__':
     # All of the model parameters and training parameters are sent as arguments when the script
-    # is executed. Here we set up an argument parser to easily access the parameters.
+    # is executed. Here I set up an argument parser to easily access the parameters.
 
     parser = argparse.ArgumentParser()
 

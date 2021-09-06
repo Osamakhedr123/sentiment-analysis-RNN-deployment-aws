@@ -23,8 +23,8 @@ def review_to_words(review):
     return words
 
 def convert_and_pad(word_dict, sentence, pad=500):
-    NOWORD = 0 # We will use 0 to represent the 'no word' category
-    INFREQ = 1 # and we use 1 to represent the infrequent words, i.e., words not appearing in word_dict
+    NOWORD = 0 # I will use 0 to represent the 'no word' category
+    INFREQ = 1 # and use 1 to represent the infrequent words, i.e., words not appearing in word_dict
     
     working_sentence = [NOWORD] * pad
     
